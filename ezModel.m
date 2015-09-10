@@ -1,6 +1,6 @@
 % This is some basic definitions, the size of the test matrix
 dimension       = 5 ;
-noiseStrength   = 0.1 ;
+noiseStrength   = 1 ;
 signalAve       = 1 ;
 signalVar       = 0.5 ;
 
@@ -26,4 +26,5 @@ for i = 1 : (testNum - 1)
 end
 
 % show the histogram of the distribution
-hist(rho , [0.9:0.01:1]);
+hist(rho , [0:0.1:1]);
+grid;
